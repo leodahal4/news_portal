@@ -21,7 +21,6 @@
         <v-img
           lazy-src="../assets/demologo.png"
           src="../assets/demologo.png"
-          contain
           width="110"
           height="70"
           class="mr-2"
@@ -48,7 +47,6 @@
       >
         <v-img
           src="../assets/demologo.png"
-          contain
           width="70"
           height="30"
           class="mr-2"
@@ -105,7 +103,7 @@
     </transition>
     <v-spacer/>
     <!-- date on the appbar -->
-    <div class="primary--text font-weight-light" v-if="desktop">
+    <div :class="appBarContentColor" v-if="desktop">
       {{ dateVal }}
     </div>
     <v-dialog
